@@ -5,8 +5,14 @@
       "src": "server.js",
       "use": "@vercel/node",
       "config": {
-        "includeFiles": ["src/**", "config/**", ".env"],
-        "excludeFiles": ["node_modules/**"],
+        "includeFiles": [
+          "src/**",
+          "config/**",
+          "node_modules/pg/**",
+          "node_modules/pg-hstore/**",
+          "node_modules/sequelize/**",
+          ".env"
+        ],
         "nodeVersion": "24.x"
       }
     }
